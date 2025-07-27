@@ -1,0 +1,11 @@
+# For local testing - update with your actual project ID
+project_id = "your-project-id-here"
+region     = "us-central1"
+
+# Authentication: Choose one of the following methods:
+# Option 1: Use service account key file (for local development)
+credentials = "secrets/your-service-account-key.json"
+
+# Option 2: Use Application Default Credentials (comment out credentials above and use this)
+# Run: gcloud auth application-default login
+# credentials = ""
