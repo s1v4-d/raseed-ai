@@ -8,8 +8,8 @@ set -e
 echo "🔧 Setting up local development environment..."
 
 # Load environment variables (which now sources from terraform.tfvars)
-if [ -f "/workspaces/Raseed/.env.local" ]; then
-    source /workspaces/Raseed/.env.local
+if [ -f "/workspaces/raseed-ai/.env.local" ]; then
+    source /workspaces/raseed-ai/.env.local
     echo "✅ Loaded environment variables from .env.local"
     echo "   Project ID: $PROJECT_ID (from terraform.tfvars)"
     echo "   Region: $REGION (from terraform.tfvars)"
@@ -21,7 +21,7 @@ fi
 # Check if gcloud is available
 if ! command -v gcloud &> /dev/null; then
     echo "❌ gcloud CLI not found in PATH"
-    echo "   Expected: /workspaces/Raseed/gcli/google-cloud-sdk/bin/gcloud"
+    echo "   Expected: /workspaces/raseed-ai/gcli/google-cloud-sdk/bin/gcloud"
     exit 1
 fi
 

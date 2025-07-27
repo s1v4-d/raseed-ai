@@ -230,3 +230,4 @@ __marimo__/
 *.tfvars
 .terraformrc
 terraform.rc
+infra/imports.tf.backup
