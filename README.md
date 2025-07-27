@@ -194,3 +194,7 @@ This project uses Google Cloud technologies and follows infrastructure-as-code p
 ---
 
 **Project Raseed** - Transforming receipt management with AI and Google Wallet integration.
+
+**TL;DR;**
+- Add "GCP_Project_ID" and "GCP_SA_KEY" secrets in 'production' env in github actions.
+- Everytime you push changes to main, it would deploy the application onto GCP
