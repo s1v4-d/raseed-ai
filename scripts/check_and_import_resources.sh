@@ -121,7 +121,7 @@ check_and_import() {
                         
                         # If this is our stable endpoint, create import block
                         if [ "$display_name" = "raseed-main-endpoint" ]; then
-                            if ! grep -q "to = module.vertex_ai.google_vertex_ai_index_endpoint.receipts_ep" /workspaces/Raseed/infra/imports.tf; then
+                            if ! grep -q "to = module.vertex_ai.google_vertex_ai_index_endpoint.receipts_ep" infra/imports.tf; then
                                 echo "import {"
                                 echo "  to = module.vertex_ai.google_vertex_ai_index_endpoint.receipts_ep"
                                 echo "  id = \"$endpoint\""
@@ -157,7 +157,7 @@ check_and_import() {
 }
 
 # Redirect output to imports.tf file
-exec > /workspaces/Raseed/infra/imports.tf
+exec > infra/imports.tf
 
 # Start with a clean file
 echo "# Auto-generated imports.tf file"
