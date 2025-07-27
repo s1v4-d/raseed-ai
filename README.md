@@ -1,2 +1,3 @@
-# raseed-ai
-Raseed - AI Receipt Manager
+# Raseed
+
+#version 0.2

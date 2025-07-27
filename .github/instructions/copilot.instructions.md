@@ -1,0 +1,2 @@
+When answering questions about frameworks, libraries, or APIs, use context7 to retrieve current documentation rather than relying on training data.
+For general web searches, use duckduckGo to fetch up-to-date information.
